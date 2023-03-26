@@ -31,7 +31,7 @@ const HomeStack = createStackNavigator(screens, {
   },
 });
 
-export default createAppContainer(HomeStack);
+export default HomeStack;
 // now here above the createAppContainer returns a component
 // the component will contain all of the information wrt to the navigation homestack
 // the component can be rendered to the app.js

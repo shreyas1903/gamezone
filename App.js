@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import * as Font from "expo-font";
 import Home from "./screens/home";
 import AppLoading from "expo-app-loading";
-import Navigator from "./routes/homeStack";
+import Navigator from "./routes/drawer";
 // import { StyleSheet, Text, View } from "react-native";
 // we can also use expo start
 
