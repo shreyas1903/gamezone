@@ -8,14 +8,12 @@ import ReviewDetails from "../screens/reviewDetails";
 const screens = {
   Home: {
     screen: Home,
-    navigationOptions: {
-      title: "GameZone",
-    },
-  },
-  ReviewDetails: {
-    screen: ReviewDetails,
-    navigationOptions: {
-      title: "Review Details",
+    navigationOptions: ({ navigation }) => {
+      return {
+        headerTitle: () => <Header navigation={navigation} />,
+        // here we are passing the navigation as we cannot access the navigation as the prop in the header.js
+        // we can access the navigation only in screens
+      };
     },
   },
 };

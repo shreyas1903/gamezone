@@ -5,6 +5,7 @@ import {
   Text,
   TouchableOpacity,
   FlatList,
+  Modal,
 } from "react-native";
 import { globalStyles } from "../styles/global";
 
@@ -44,6 +45,12 @@ export default function Home({ navigation }) {
 
   return (
     <View style={globalStyles.container}>
+      <Modal visible={true}>
+        <View>
+          <Text>Hello from modal</Text>
+        </View>
+      </Modal>
+
       <FlatList
         data={reviews}
         renderItem={({ item }) => (
