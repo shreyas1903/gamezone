@@ -3,11 +3,11 @@ import { StyleSheet, Text, View, Button } from "react-native";
 import { globalStyles } from "../styles/global";
 
 export default function ReviewDetails({ navigation }) {
-  const pressHandler = () => {
-    navigation.goBack();
-    // here it basically just pops back the review page and goes back to the home page
-    // very much similar to the stack(first in last out)
-  };
+  // const pressHandler = () => {
+  //   navigation.goBack();
+  //   // here it basically just pops back the review page and goes back to the home page
+  //   // very much similar to the stack(first in last out)
+  // };
 
   return (
     <View style={globalStyles.container}>

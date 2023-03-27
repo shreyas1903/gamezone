@@ -3,9 +3,8 @@ import {
   StyleSheet,
   View,
   Text,
-  FlatList,
   TouchableOpacity,
-  Touchable,
+  FlatList,
 } from "react-native";
 import { globalStyles } from "../styles/global";
 
@@ -45,8 +44,6 @@ export default function Home({ navigation }) {
 
   return (
     <View style={globalStyles.container}>
-      {/* <Text style={globalStyles.titleText}>Home Screen</Text> */}
-      {/* <Button title="Go to review details" onPress={pressHandler}></Button> */}
       <FlatList
         data={reviews}
         renderItem={({ item }) => (
